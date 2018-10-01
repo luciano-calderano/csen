@@ -1,0 +1,6 @@
+framework module Pods_CsenCinofilia {
+  umbrella header "Pods-CsenCinofilia-umbrella.h"
+
+  export *
+  module * { export * }
+}

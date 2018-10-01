@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aQk-dd-Tyq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Club List-->
+        <scene sceneID="ud7-sV-0x8">
+            <objects>
+                <viewController storyboardIdentifier="ClubList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aQk-dd-Tyq" customClass="ClubList" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0hZ-HA-x2v"/>
+                        <viewControllerLayoutGuide type="bottom" id="jdv-kM-CDN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="trj-ye-dKw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjH-XA-vmb">
+                                <rect key="frame" x="554" y="62" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ELe-17-OK3"/>
+                                    <constraint firstAttribute="height" constant="30" id="NAa-Jj-i5H"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="search">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSrch" destination="aQk-dd-Tyq" eventType="touchUpInside" id="Yc9-IA-FeE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tTm-Gl-dnI">
+                                <rect key="frame" x="16" y="62" width="530" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Tw-1h-qJQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yf-Xe-nc8" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DvZ-yY-u0v"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titolo" value="#listAsso"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rcw-Ds-pIV">
+                                <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClubListCell" rowHeight="120" id="HkM-jw-5DA" customClass="ClubListCell" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HkM-jw-5DA" id="XDb-dW-D7w">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Asso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YPK-dW-rV4" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="83" y="1" width="290" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="FeT-dT-xfQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-Ej-HVk" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="83" y="41" width="290" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="JKh-ci-bZ1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-mk-XMi" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="83" y="21" width="290" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="E3R-9T-XH5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" tag="99" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="K" translatesAutoresizingMaskIntoConstraints="NO" id="0df-g4-qnL">
+                                                    <rect key="frame" x="5" y="0.0" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="PKT-x7-YrU"/>
+                                                        <constraint firstAttribute="width" constant="70" id="ubZ-Ei-GlX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1w3-KL-Wfg" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="83" y="70" width="209" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="n28-t7-coZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eMail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WUt-He-cl7" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="83" y="95" width="209" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="MFI-FB-sTs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWt-JF-LeQ">
+                                                    <rect key="frame" x="20" y="73" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="atv-fF-60i"/>
+                                                        <constraint firstAttribute="height" constant="40" id="oMl-Et-PMC"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="icoPhone">
+                                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnPhone:" destination="HkM-jw-5DA" eventType="touchUpInside" id="Wge-am-DiV"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKW-HZ-Z68">
+                                                    <rect key="frame" x="327" y="73" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="0QG-I5-vtv"/>
+                                                        <constraint firstAttribute="height" constant="40" id="PKb-5J-tdj"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="icoEmail">
+                                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnEmail:" destination="HkM-jw-5DA" eventType="touchUpInside" id="rKr-64-Z2c"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0df-g4-qnL" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="5" id="0du-Uo-vG1"/>
+                                                <constraint firstItem="0df-g4-qnL" firstAttribute="top" secondItem="XDb-dW-D7w" secondAttribute="top" id="3wk-bH-GUP"/>
+                                                <constraint firstAttribute="trailing" secondItem="1w3-KL-Wfg" secondAttribute="trailing" constant="83" id="7Oj-UO-gc0"/>
+                                                <constraint firstItem="Mkv-Ej-HVk" firstAttribute="top" secondItem="YPK-dW-rV4" secondAttribute="bottom" constant="20" id="CfU-lm-dhy"/>
+                                                <constraint firstItem="Mkv-Ej-HVk" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="83" id="Cqc-AM-AGN"/>
+                                                <constraint firstAttribute="bottom" secondItem="dKW-HZ-Z68" secondAttribute="bottom" constant="6" id="E4V-3L-tGm"/>
+                                                <constraint firstAttribute="bottom" secondItem="sWt-JF-LeQ" secondAttribute="bottom" constant="6" id="Fje-A4-m5D"/>
+                                                <constraint firstAttribute="trailing" secondItem="pmK-mk-XMi" secondAttribute="trailing" constant="2" id="JGh-Ri-72h"/>
+                                                <constraint firstItem="WUt-He-cl7" firstAttribute="top" secondItem="1w3-KL-Wfg" secondAttribute="bottom" constant="5" id="JIW-Gq-d9q"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mkv-Ej-HVk" secondAttribute="trailing" constant="2" id="Jjk-Pk-Tvh"/>
+                                                <constraint firstAttribute="trailing" secondItem="YPK-dW-rV4" secondAttribute="trailing" constant="2" id="Mfp-Kk-lK9"/>
+                                                <constraint firstItem="WUt-He-cl7" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="83" id="Uxg-L8-fi8"/>
+                                                <constraint firstAttribute="trailing" secondItem="WUt-He-cl7" secondAttribute="trailing" constant="83" id="Xhz-9u-kFh"/>
+                                                <constraint firstItem="1w3-KL-Wfg" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="83" id="d0c-Dz-BFn"/>
+                                                <constraint firstItem="YPK-dW-rV4" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="83" id="jIb-hL-PkN"/>
+                                                <constraint firstItem="pmK-mk-XMi" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="83" id="kHM-dw-24F"/>
+                                                <constraint firstItem="1w3-KL-Wfg" firstAttribute="top" secondItem="Mkv-Ej-HVk" secondAttribute="bottom" constant="9" id="ojC-sq-S58"/>
+                                                <constraint firstAttribute="trailing" secondItem="dKW-HZ-Z68" secondAttribute="trailing" constant="8" id="pY6-Kc-cVs"/>
+                                                <constraint firstItem="pmK-mk-XMi" firstAttribute="top" secondItem="YPK-dW-rV4" secondAttribute="bottom" id="ppC-E4-4lR"/>
+                                                <constraint firstItem="Mkv-Ej-HVk" firstAttribute="top" secondItem="XDb-dW-D7w" secondAttribute="top" constant="41" id="vsH-zs-SV5"/>
+                                                <constraint firstItem="sWt-JF-LeQ" firstAttribute="leading" secondItem="XDb-dW-D7w" secondAttribute="leading" constant="20" id="zBR-Q7-ayv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="activities" destination="Mkv-Ej-HVk" id="H05-1U-rtM"/>
+                                            <outlet property="address" destination="pmK-mk-XMi" id="XZ3-Ec-fTw"/>
+                                            <outlet property="business_name" destination="YPK-dW-rV4" id="TmN-SS-0jI"/>
+                                            <outlet property="email" destination="WUt-He-cl7" id="Veh-bD-NxG"/>
+                                            <outlet property="imageLogo" destination="0df-g4-qnL" id="5Fg-Wf-44R"/>
+                                            <outlet property="phone" destination="1w3-KL-Wfg" id="tae-pE-g2x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aQk-dd-Tyq" id="vhy-Fb-9PP"/>
+                                    <outlet property="delegate" destination="aQk-dd-Tyq" id="6ix-vo-ueO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tTm-Gl-dnI" firstAttribute="leading" secondItem="trj-ye-dKw" secondAttribute="leading" constant="16" id="8Ml-1t-m28"/>
+                            <constraint firstAttribute="trailing" secondItem="Rcw-Ds-pIV" secondAttribute="trailing" id="9OC-ip-PIF"/>
+                            <constraint firstItem="Rcw-Ds-pIV" firstAttribute="top" secondItem="tTm-Gl-dnI" secondAttribute="bottom" constant="8" id="C2C-hh-1h2"/>
+                            <constraint firstAttribute="trailing" secondItem="3Yf-Xe-nc8" secondAttribute="trailing" id="DgX-bB-5Ha"/>
+                            <constraint firstItem="TjH-XA-vmb" firstAttribute="leading" secondItem="tTm-Gl-dnI" secondAttribute="trailing" constant="8" id="IgS-Nu-FDg"/>
+                            <constraint firstItem="tTm-Gl-dnI" firstAttribute="top" secondItem="TjH-XA-vmb" secondAttribute="top" id="Kx6-og-4BJ"/>
+                            <constraint firstItem="Rcw-Ds-pIV" firstAttribute="leading" secondItem="trj-ye-dKw" secondAttribute="leading" id="N4M-zc-R2F"/>
+                            <constraint firstItem="tTm-Gl-dnI" firstAttribute="top" secondItem="0hZ-HA-x2v" secondAttribute="bottom" constant="42" id="VSf-2U-pzh"/>
+                            <constraint firstItem="Rcw-Ds-pIV" firstAttribute="top" secondItem="tTm-Gl-dnI" secondAttribute="bottom" constant="8" id="W81-AP-Cq0"/>
+                            <constraint firstItem="jdv-kM-CDN" firstAttribute="top" secondItem="Rcw-Ds-pIV" secondAttribute="bottom" id="XQC-Aj-HPa"/>
+                            <constraint firstAttribute="trailing" secondItem="TjH-XA-vmb" secondAttribute="trailing" constant="16" id="YmF-lV-elS"/>
+                            <constraint firstItem="3Yf-Xe-nc8" firstAttribute="top" secondItem="0hZ-HA-x2v" secondAttribute="bottom" id="jgK-KZ-Kzp"/>
+                            <constraint firstItem="3Yf-Xe-nc8" firstAttribute="leading" secondItem="trj-ye-dKw" secondAttribute="leading" id="r91-Nv-bqc"/>
+                            <constraint firstAttribute="trailing" secondItem="TjH-XA-vmb" secondAttribute="trailing" constant="16" id="ssG-yO-rzH"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerHeaderView" destination="3Yf-Xe-nc8" id="sVN-cW-OFI"/>
+                        <outlet property="tableView" destination="Rcw-Ds-pIV" id="VmE-fa-0fJ"/>
+                        <outlet property="txtSrch" destination="tTm-Gl-dnI" id="oDU-L1-KaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLW-El-ha7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.60000000000002" y="1136.5817091454273"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="K" width="250" height="250"/>
+        <image name="icoEmail" width="186" height="186"/>
+        <image name="icoPhone" width="150" height="150"/>
+        <image name="search" width="41" height="40"/>
+    </resources>
+</document>

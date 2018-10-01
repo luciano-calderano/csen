@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="TY9-su-vBI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UserLoginCtrl-->
+        <scene sceneID="n0z-MM-zWh">
+            <objects>
+                <viewController id="TY9-su-vBI" userLabel="UserLoginCtrl" customClass="UserLoginCtrl" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m9l-MV-j8Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="J3w-BD-LgI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FvF-Go-Kzf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmS-bm-AWi" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0mr-8k-vfm"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DZB-xC-J1i">
+                                <rect key="frame" x="145.5" y="20" width="84" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="eSL-Sm-XyX"/>
+                                    <constraint firstAttribute="height" constant="100" id="rO7-J6-WfV"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msP-qe-Oe6">
+                                <rect key="frame" x="37.5" y="213.5" width="300" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#loginHead" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmG-oc-Mi6" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="86" y="8" width="128" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#loginUser" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySz-Zb-fS1" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="50" width="128" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#loginPass" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpP-zQ-fUk" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="115" width="128" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIp-oU-3CR" customClass="MYTextField" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="140" width="268" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.8007348190137098" green="0.77967267008690189" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-EE-ES1" customClass="MYButtonRounded" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="78" y="190" width="145" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="#loginSignIn">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLogin" destination="TY9-su-vBI" eventType="touchUpInside" id="fcz-Xr-Dw6"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5A7-Py-J4m" customClass="MYTextField" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="77" width="268" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.8007348190137098" green="0.77967267008690189" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <outlet property="nextTextField" destination="VIp-oU-3CR" id="nEH-0a-Ftr"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Yp4-0G-RAD"/>
+                                    <constraint firstAttribute="width" constant="300" id="b2Y-cd-RPk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WmS-bm-AWi" firstAttribute="leading" secondItem="FvF-Go-Kzf" secondAttribute="leading" id="6oc-WJ-ejb"/>
+                            <constraint firstAttribute="centerX" secondItem="DZB-xC-J1i" secondAttribute="centerX" id="9vN-g1-LgI"/>
+                            <constraint firstItem="msP-qe-Oe6" firstAttribute="centerY" secondItem="FvF-Go-Kzf" secondAttribute="centerY" id="XS5-W5-pN6"/>
+                            <constraint firstItem="msP-qe-Oe6" firstAttribute="centerX" secondItem="FvF-Go-Kzf" secondAttribute="centerX" id="Y1Z-gD-hQk"/>
+                            <constraint firstItem="DZB-xC-J1i" firstAttribute="top" secondItem="m9l-MV-j8Q" secondAttribute="bottom" id="jo7-El-ath"/>
+                            <constraint firstItem="WmS-bm-AWi" firstAttribute="top" secondItem="m9l-MV-j8Q" secondAttribute="bottom" id="th5-az-WWK"/>
+                            <constraint firstAttribute="trailing" secondItem="WmS-bm-AWi" secondAttribute="trailing" id="ybA-lE-dFP"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerHeaderView" destination="WmS-bm-AWi" id="BdE-yN-gtF"/>
+                        <outlet property="txtPass" destination="VIp-oU-3CR" id="hQY-gX-qMu"/>
+                        <outlet property="txtUser" destination="5A7-Py-J4m" id="ibX-Ye-lZZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB8-IH-YTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="490.24499999999995"/>
+        </scene>
+        <!--User Subscription Ctrl-->
+        <scene sceneID="7Mq-oj-2FR">
+            <objects>
+                <viewController storyboardIdentifier="UserSubscriptionCtrl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E3N-MV-ohA" customClass="UserSubscriptionCtrl" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SNE-ks-NeV"/>
+                        <viewControllerLayoutGuide type="bottom" id="47z-0C-CGT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bKT-vy-M7x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qm2-bm-d2I" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SbL-sH-aKr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titolo" value="#mySubs"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kMM-LQ-ka0">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserSubscriptionCell" rowHeight="150" id="KSe-Gr-4IE" customClass="UserSubscriptionCell" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSe-Gr-4IE" id="BDv-72-cVu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subsBinNom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XNF-rZ-fr6" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="3" width="351" height="20"/>
+                                                    <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="NqM-P0-qHN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subsTit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sOT-fW-5G1" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="28" width="365" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="rRb-aI-0OW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subsLoc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TGG-w5-t76" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="53" width="365" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="5t7-rZ-L9t"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subsDat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mPd-WJ-mLe" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="78" width="365" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="RBK-qD-34D"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subsLevCat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-hq-2ly" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="103" width="365" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="rW0-2v-x1e"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="TGG-w5-t76" firstAttribute="leading" secondItem="BDv-72-cVu" secondAttribute="leading" constant="5" id="3jN-K9-ILU"/>
+                                                <constraint firstItem="vnL-hq-2ly" firstAttribute="top" secondItem="mPd-WJ-mLe" secondAttribute="bottom" constant="5" id="4yZ-dL-cuW"/>
+                                                <constraint firstItem="TGG-w5-t76" firstAttribute="top" secondItem="sOT-fW-5G1" secondAttribute="bottom" constant="5" id="7fo-CH-BKp"/>
+                                                <constraint firstAttribute="trailing" secondItem="mPd-WJ-mLe" secondAttribute="trailing" constant="5" id="8Yc-BO-JN5"/>
+                                                <constraint firstItem="mPd-WJ-mLe" firstAttribute="leading" secondItem="BDv-72-cVu" secondAttribute="leading" constant="5" id="ExS-gy-2L8"/>
+                                                <constraint firstAttribute="trailing" secondItem="TGG-w5-t76" secondAttribute="trailing" constant="5" id="IzN-5w-3Cz"/>
+                                                <constraint firstItem="mPd-WJ-mLe" firstAttribute="top" secondItem="TGG-w5-t76" secondAttribute="bottom" constant="5" id="NIE-at-FGs"/>
+                                                <constraint firstItem="sOT-fW-5G1" firstAttribute="top" secondItem="XNF-rZ-fr6" secondAttribute="bottom" constant="5" id="RjN-8Q-gX8"/>
+                                                <constraint firstItem="sOT-fW-5G1" firstAttribute="leading" secondItem="BDv-72-cVu" secondAttribute="leading" constant="5" id="crQ-SW-dSC"/>
+                                                <constraint firstAttribute="trailing" secondItem="vnL-hq-2ly" secondAttribute="trailing" constant="5" id="eU9-ai-X7L"/>
+                                                <constraint firstItem="vnL-hq-2ly" firstAttribute="leading" secondItem="BDv-72-cVu" secondAttribute="leading" constant="5" id="f1E-5p-yzs"/>
+                                                <constraint firstItem="XNF-rZ-fr6" firstAttribute="leading" secondItem="BDv-72-cVu" secondAttribute="leadingMargin" constant="-3" id="gwg-go-S3j"/>
+                                                <constraint firstItem="XNF-rZ-fr6" firstAttribute="top" secondItem="BDv-72-cVu" secondAttribute="topMargin" constant="-8" id="xxv-Uv-i2X"/>
+                                                <constraint firstAttribute="trailing" secondItem="sOT-fW-5G1" secondAttribute="trailing" constant="5" id="y7H-cJ-ggy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XNF-rZ-fr6" secondAttribute="trailing" constant="-3" id="zEU-oF-euS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="bin" destination="XNF-rZ-fr6" id="tGy-D2-n4S"/>
+                                            <outlet property="dat" destination="mPd-WJ-mLe" id="wm5-tp-Rsm"/>
+                                            <outlet property="lev" destination="vnL-hq-2ly" id="n5o-g7-KWC"/>
+                                            <outlet property="loc" destination="TGG-w5-t76" id="wDd-Fx-hUY"/>
+                                            <outlet property="tit" destination="sOT-fW-5G1" id="5Ff-CP-Jgg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="E3N-MV-ohA" id="lpP-Tw-mME"/>
+                                    <outlet property="delegate" destination="E3N-MV-ohA" id="DW1-0P-0Yi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kMM-LQ-ka0" secondAttribute="trailing" id="3md-jg-HFS"/>
+                            <constraint firstItem="47z-0C-CGT" firstAttribute="top" secondItem="kMM-LQ-ka0" secondAttribute="bottom" id="Gkm-OI-UnT"/>
+                            <constraint firstItem="Qm2-bm-d2I" firstAttribute="leading" secondItem="bKT-vy-M7x" secondAttribute="leading" id="Rch-uy-7i7"/>
+                            <constraint firstAttribute="trailing" secondItem="Qm2-bm-d2I" secondAttribute="trailing" id="dO3-Bh-jX0"/>
+                            <constraint firstItem="Qm2-bm-d2I" firstAttribute="top" secondItem="SNE-ks-NeV" secondAttribute="bottom" id="kTa-Ut-Qeh"/>
+                            <constraint firstItem="kMM-LQ-ka0" firstAttribute="top" secondItem="SNE-ks-NeV" secondAttribute="bottom" constant="30" id="ngs-QC-TUU"/>
+                            <constraint firstItem="kMM-LQ-ka0" firstAttribute="leading" secondItem="bKT-vy-M7x" secondAttribute="leading" id="pMf-K3-FQn"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerHeaderView" destination="Qm2-bm-d2I" id="Lke-sy-0ps"/>
+                        <outlet property="tableView" destination="kMM-LQ-ka0" id="PEN-CT-yEm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uuc-ah-v8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174.375" y="490.24499999999995"/>
+        </scene>
+        <!--UserProfileCtrl-->
+        <scene sceneID="IEl-7Q-Y6k">
+            <objects>
+                <viewController storyboardIdentifier="UserProfileCtrl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GGh-m7-EsO" userLabel="UserProfileCtrl" customClass="UserProfileCtrl" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Zr-xY-oja"/>
+                        <viewControllerLayoutGuide type="bottom" id="BPK-We-qh5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ww-Th-GZy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KjL-JS-9Ba" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lyY-gS-K2Q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titolo" value="#areaPers"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="optionIcon" value="logout"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ukL-YB-PVr">
+                                <rect key="frame" x="0.0" y="50" width="375" height="577"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserProfileCell" rowHeight="40" id="CB8-T8-Y6m" customClass="UserProfileCell" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CB8-T8-Y6m" id="RT8-vY-QX1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx5-2C-ae7" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="4" y="9" width="80" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="b27-YT-AFM"/>
+                                                        <constraint firstAttribute="width" constant="80" id="reu-Pr-AQi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGW-v2-ml8" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="86" y="9" width="285" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="Wxh-SR-3hX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kx5-2C-ae7" firstAttribute="leading" secondItem="RT8-vY-QX1" secondAttribute="leading" constant="4" id="0sv-01-DmE"/>
+                                                <constraint firstItem="LGW-v2-ml8" firstAttribute="centerY" secondItem="RT8-vY-QX1" secondAttribute="centerY" id="Sw7-WN-drd"/>
+                                                <constraint firstAttribute="trailing" secondItem="LGW-v2-ml8" secondAttribute="trailing" constant="4" id="e6x-sU-dn6"/>
+                                                <constraint firstItem="LGW-v2-ml8" firstAttribute="leading" secondItem="kx5-2C-ae7" secondAttribute="trailing" constant="2" id="rWS-RI-HwY"/>
+                                                <constraint firstItem="kx5-2C-ae7" firstAttribute="centerY" secondItem="RT8-vY-QX1" secondAttribute="centerY" id="vwo-qz-KlF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descr" destination="LGW-v2-ml8" id="HUO-89-5n3"/>
+                                            <outlet property="title" destination="kx5-2C-ae7" id="viv-GV-WLj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="GGh-m7-EsO" id="iKI-9E-15E"/>
+                                    <outlet property="delegate" destination="GGh-m7-EsO" id="U27-7l-uQW"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEl-oV-l3f" customClass="MYButton" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TgM-np-iRQ"/>
+                                </constraints>
+                                <state key="normal" title="#mySubs">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin" destination="TY9-su-vBI" eventType="touchUpInside" id="WtC-XL-drA"/>
+                                    <action selector="mySubsButtonTapped" destination="GGh-m7-EsO" eventType="touchUpInside" id="Ito-om-a72"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ukL-YB-PVr" firstAttribute="leading" secondItem="5ww-Th-GZy" secondAttribute="leading" id="00p-GQ-Uu5"/>
+                            <constraint firstAttribute="trailing" secondItem="KjL-JS-9Ba" secondAttribute="trailing" id="1Bf-KR-jbr"/>
+                            <constraint firstItem="KjL-JS-9Ba" firstAttribute="top" secondItem="4Zr-xY-oja" secondAttribute="bottom" id="3bO-1j-0Tw"/>
+                            <constraint firstAttribute="trailing" secondItem="ukL-YB-PVr" secondAttribute="trailing" id="7zF-ov-nf3"/>
+                            <constraint firstItem="ukL-YB-PVr" firstAttribute="top" secondItem="KjL-JS-9Ba" secondAttribute="bottom" id="I2W-Ic-xth"/>
+                            <constraint firstAttribute="trailing" secondItem="VEl-oV-l3f" secondAttribute="trailing" id="IEr-fp-gFs"/>
+                            <constraint firstItem="VEl-oV-l3f" firstAttribute="leading" secondItem="5ww-Th-GZy" secondAttribute="leading" id="SzU-lB-21A"/>
+                            <constraint firstItem="BPK-We-qh5" firstAttribute="top" secondItem="ukL-YB-PVr" secondAttribute="bottom" constant="40" id="t2K-d4-bHI"/>
+                            <constraint firstItem="BPK-We-qh5" firstAttribute="top" secondItem="VEl-oV-l3f" secondAttribute="bottom" id="w1z-0Y-7eD"/>
+                            <constraint firstItem="KjL-JS-9Ba" firstAttribute="leading" secondItem="5ww-Th-GZy" secondAttribute="leading" id="wZr-aj-oOS"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerHeaderView" destination="KjL-JS-9Ba" id="bS3-63-nKa"/>
+                        <outlet property="mySubsButton" destination="VEl-oV-l3f" id="ZJx-DH-Tqo"/>
+                        <outlet property="tableView" destination="ukL-YB-PVr" id="O4F-4p-Ctk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfz-tC-CWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="490.24499999999995"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="800" height="914"/>
+        <image name="logout" width="512" height="512"/>
+    </resources>
+</document>

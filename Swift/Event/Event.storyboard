@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="qwg-EZ-6T6">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Ctrl-->
+        <scene sceneID="pF0-vY-738">
+            <objects>
+                <viewController storyboardIdentifier="EventCtrl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qwg-EZ-6T6" customClass="EventCtrl" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zkR-dv-A69"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4L-DV-gwv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O4k-IO-z4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bxn-TM-MGC">
+                                <rect key="frame" x="0.0" y="55" width="320" height="425"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" rowHeight="220" id="tXE-TI-dyC" customClass="EventCell" customModule="CsenCinofilia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="220"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tXE-TI-dyC" id="ozw-8z-7A3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gz0-Gy-9ga">
+                                                    <rect key="frame" x="5" y="30" width="50" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxv-kI-j8t" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="30" width="50" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zP9-Y8-RG3" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Gp9-b2-YWm"/>
+                                                        <constraint firstAttribute="height" constant="50" id="JM2-tF-B05"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VdC-RA-U0m" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="31" width="255" height="21"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="B1R-lp-ozG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn4-BT-5vL" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="61" y="57" width="254" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="L6e-8E-X2g"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="luX-10-Irv">
+                                                    <rect key="frame" x="5" y="121" width="310" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="kGV-SA-zEP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BmP-l2-Mfe" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="83" width="50" height="18"/>
+                                                    <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Oqk-mO-FGd"/>
+                                                        <constraint firstAttribute="height" constant="18" id="mgS-7B-mgh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-6F-Ong" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="83" y="86" width="110" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="hkb-GP-Cx0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="T5E-VX-EAK">
+                                                    <rect key="frame" x="60" y="87" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="Vju-GI-KAJ"/>
+                                                        <constraint firstAttribute="height" constant="16" id="fo8-Au-dyC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-MY-gfp" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="5" width="310" height="20"/>
+                                                    <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="LPu-ZY-wwU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription closed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdm-Q1-r2Q" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                                    <rect key="frame" x="198" y="86" width="120" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="6Kk-KD-ARw"/>
+                                                        <constraint firstAttribute="width" constant="120" id="6NI-Aw-J6m"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NVm-MY-gfp" firstAttribute="leading" secondItem="Gz0-Gy-9ga" secondAttribute="trailing" constant="-50" id="7bg-82-Mxs"/>
+                                                <constraint firstItem="luX-10-Irv" firstAttribute="leading" secondItem="ozw-8z-7A3" secondAttribute="leading" constant="5" id="Cc2-m7-tvI"/>
+                                                <constraint firstItem="vn4-BT-5vL" firstAttribute="leading" secondItem="ozw-8z-7A3" secondAttribute="leading" constant="61" id="D93-2q-Feu"/>
+                                                <constraint firstItem="VdC-RA-U0m" firstAttribute="leading" secondItem="Gz0-Gy-9ga" secondAttribute="trailing" constant="5" id="Jml-kn-d9T"/>
+                                                <constraint firstAttribute="trailing" secondItem="mdm-Q1-r2Q" secondAttribute="trailing" constant="2" id="LT7-Pv-brd"/>
+                                                <constraint firstItem="VdC-RA-U0m" firstAttribute="top" secondItem="NVm-MY-gfp" secondAttribute="bottom" constant="6" id="UHW-qx-q7r"/>
+                                                <constraint firstItem="BmP-l2-Mfe" firstAttribute="top" secondItem="Gz0-Gy-9ga" secondAttribute="bottom" constant="3" id="UbK-Sv-wIX"/>
+                                                <constraint firstItem="Gz0-Gy-9ga" firstAttribute="top" secondItem="ozw-8z-7A3" secondAttribute="top" constant="30" id="Uwo-17-1db"/>
+                                                <constraint firstItem="BmP-l2-Mfe" firstAttribute="leading" secondItem="ozw-8z-7A3" secondAttribute="leading" constant="5" id="X5L-xD-vPD"/>
+                                                <constraint firstAttribute="trailing" secondItem="luX-10-Irv" secondAttribute="trailing" constant="5" id="Ycq-Gj-CGL"/>
+                                                <constraint firstAttribute="trailing" secondItem="vn4-BT-5vL" secondAttribute="trailing" constant="5" id="c9V-R6-niD"/>
+                                                <constraint firstItem="luX-10-Irv" firstAttribute="top" secondItem="ozw-8z-7A3" secondAttribute="topMargin" constant="110" id="d4h-jT-rB3"/>
+                                                <constraint firstItem="mdm-Q1-r2Q" firstAttribute="leading" secondItem="JtS-6F-Ong" secondAttribute="trailing" constant="5" id="gMg-tR-dSo"/>
+                                                <constraint firstAttribute="trailing" secondItem="VdC-RA-U0m" secondAttribute="trailing" constant="5" id="gr2-uO-cS2"/>
+                                                <constraint firstItem="mdm-Q1-r2Q" firstAttribute="top" secondItem="vn4-BT-5vL" secondAttribute="bottom" constant="8" id="hCg-nU-5Qc"/>
+                                                <constraint firstItem="JtS-6F-Ong" firstAttribute="leading" secondItem="T5E-VX-EAK" secondAttribute="trailing" constant="7" id="iGY-50-lta"/>
+                                                <constraint firstItem="NVm-MY-gfp" firstAttribute="top" secondItem="ozw-8z-7A3" secondAttribute="top" constant="5" id="k3G-EQ-N8J"/>
+                                                <constraint firstItem="T5E-VX-EAK" firstAttribute="top" secondItem="vn4-BT-5vL" secondAttribute="bottom" constant="9" id="kDG-97-YUd"/>
+                                                <constraint firstAttribute="trailing" secondItem="NVm-MY-gfp" secondAttribute="trailing" constant="5" id="mU5-ci-kvC"/>
+                                                <constraint firstItem="Gz0-Gy-9ga" firstAttribute="leading" secondItem="ozw-8z-7A3" secondAttribute="leading" constant="5" id="nA5-OP-KnS"/>
+                                                <constraint firstItem="T5E-VX-EAK" firstAttribute="leading" secondItem="BmP-l2-Mfe" secondAttribute="trailing" constant="5" id="oKE-Vr-USa"/>
+                                                <constraint firstItem="JtS-6F-Ong" firstAttribute="top" secondItem="ozw-8z-7A3" secondAttribute="topMargin" constant="75" id="rWz-dO-Qe7"/>
+                                                <constraint firstItem="vn4-BT-5vL" firstAttribute="top" secondItem="ozw-8z-7A3" secondAttribute="topMargin" constant="46" id="uMd-CZ-ZKi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imvLocandina" destination="luX-10-Irv" id="ibL-34-mI0"/>
+                                            <outlet property="lblArea" destination="NVm-MY-gfp" id="RCR-Vq-ktO"/>
+                                            <outlet property="lblDay" destination="zP9-Y8-RG3" id="9H7-6s-jsF"/>
+                                            <outlet property="lblMonth" destination="Lxv-kI-j8t" id="dtQ-t9-Qk1"/>
+                                            <outlet property="lblNumReg" destination="JtS-6F-Ong" id="K3J-BN-2Bi"/>
+                                            <outlet property="lblPlace" destination="vn4-BT-5vL" id="pql-F4-6tQ"/>
+                                            <outlet property="lblSubs" destination="mdm-Q1-r2Q" id="geZ-6E-TwA"/>
+                                            <outlet property="lblTitle" destination="VdC-RA-U0m" id="h19-ae-e2c"/>
+                                            <outlet property="lblType" destination="BmP-l2-Mfe" id="7yF-ul-IBU"/>
+                                            <outlet property="viewDate" destination="Gz0-Gy-9ga" id="4xd-or-veH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qwg-EZ-6T6" id="ZV8-iQ-wNy"/>
+                                    <outlet property="delegate" destination="qwg-EZ-6T6" id="7cH-gu-b4K"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePM-S5-WU2" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8zR-3u-mGr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titolo" value="#mainRuns"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bxn-TM-MGC" secondAttribute="trailing" id="1fu-FD-wmc"/>
+                            <constraint firstItem="bxn-TM-MGC" firstAttribute="top" secondItem="zkR-dv-A69" secondAttribute="bottom" constant="35" id="BFI-q4-gTc"/>
+                            <constraint firstAttribute="trailing" secondItem="ePM-S5-WU2" secondAttribute="trailing" id="Cke-hn-Z0h"/>
+                            <constraint firstItem="bxn-TM-MGC" firstAttribute="leading" secondItem="O4k-IO-z4Q" secondAttribute="leading" id="FrD-oa-1OZ"/>
+                            <constraint firstItem="M4L-DV-gwv" firstAttribute="top" secondItem="bxn-TM-MGC" secondAttribute="bottom" id="RjT-Bz-CZW"/>
+                            <constraint firstItem="ePM-S5-WU2" firstAttribute="leading" secondItem="O4k-IO-z4Q" secondAttribute="leading" id="WIm-lM-ncB"/>
+                            <constraint firstItem="ePM-S5-WU2" firstAttribute="top" secondItem="zkR-dv-A69" secondAttribute="bottom" id="Yye-m5-JXM"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerHeaderView" destination="ePM-S5-WU2" id="jCd-Rz-9Vn"/>
+                        <outlet property="tableView" destination="bxn-TM-MGC" id="AzT-lK-6zp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rt-7a-dU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560.5" y="589.5"/>
+        </scene>
+        <!--Event Dett Ctrl-->
+        <scene sceneID="0c5-b8-khy">
+            <objects>
+                <viewController storyboardIdentifier="EventDettCtrl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2na-D0-7p6" customClass="EventDettCtrl" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XUs-K0-vgr"/>
+                        <viewControllerLayoutGuide type="bottom" id="wC8-Pe-AuO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0oU-ff-nX1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-iT-pac" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nla-ik-pNe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titolo" value="-"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-MI-gUd">
+                                <rect key="frame" x="0.0" y="51" width="320" height="378"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2na-D0-7p6" id="Rnu-hX-vOp"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW0-Af-Ad5">
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bdX-Vi-A66"/>
+                                </constraints>
+                                <state key="normal" title="Subscription">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSign:" destination="2na-D0-7p6" eventType="touchUpInside" id="ofl-qw-6F2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yJ9-iT-pac" firstAttribute="top" secondItem="XUs-K0-vgr" secondAttribute="bottom" id="9a2-hW-DFY"/>
+                            <constraint firstAttribute="trailing" secondItem="kvf-MI-gUd" secondAttribute="trailing" id="EYs-sx-hgn"/>
+                            <constraint firstItem="kvf-MI-gUd" firstAttribute="leading" secondItem="0oU-ff-nX1" secondAttribute="leading" id="Gpf-zq-sXj"/>
+                            <constraint firstAttribute="trailing" secondItem="LW0-Af-Ad5" secondAttribute="trailing" id="J37-d8-rgz"/>
+                            <constraint firstItem="kvf-MI-gUd" firstAttribute="top" secondItem="yJ9-iT-pac" secondAttribute="bottom" constant="1" id="MLf-jY-Jbo"/>
+                            <constraint firstAttribute="trailing" secondItem="yJ9-iT-pac" secondAttribute="trailing" id="Sw6-hG-GAx"/>
+                            <constraint firstItem="wC8-Pe-AuO" firstAttribute="top" secondItem="LW0-Af-Ad5" secondAttribute="bottom" id="aaH-Dw-n20"/>
+                            <constraint firstItem="LW0-Af-Ad5" firstAttribute="top" secondItem="kvf-MI-gUd" secondAttribute="bottom" constant="1" id="n8Y-N5-lnX"/>
+                            <constraint firstItem="yJ9-iT-pac" firstAttribute="leading" secondItem="0oU-ff-nX1" secondAttribute="leading" id="nVP-w9-qhe"/>
+                            <constraint firstItem="LW0-Af-Ad5" firstAttribute="leading" secondItem="0oU-ff-nX1" secondAttribute="leading" id="zyN-2A-WH6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSign" destination="LW0-Af-Ad5" id="2Px-mQ-vIU"/>
+                        <outlet property="containerHeaderView" destination="yJ9-iT-pac" id="lDF-gm-gu9"/>
+                        <outlet property="scroll" destination="kvf-MI-gUd" id="13f-VU-qNd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgv-Bh-F1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="e0X-Z8-qmu"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="589"/>
+        </scene>
+        <!--Event Subs Ctrl-->
+        <scene sceneID="6BC-DU-VOW">
+            <objects>
+                <viewController storyboardIdentifier="EventSubsCtrl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zvz-QI-4Nt" customClass="EventSubsCtrl" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JiS-YU-Ggt"/>
+                        <viewControllerLayoutGuide type="bottom" id="fBW-lz-xjX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wqy-UY-lbq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9N3-Dl-ITa" customClass="HeaderView" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mWZ-Nh-cx4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titolo" value="#subsTit"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vvH-EF-Rc2">
+                                <rect key="frame" x="0.0" y="50" width="320" height="430"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zvz-QI-4Nt" id="AtC-QO-2TC"/>
+                                    <outlet property="delegate" destination="Zvz-QI-4Nt" id="C61-MV-e0Q"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9N3-Dl-ITa" firstAttribute="leading" secondItem="Wqy-UY-lbq" secondAttribute="leading" id="8Za-la-PNW"/>
+                            <constraint firstAttribute="trailing" secondItem="vvH-EF-Rc2" secondAttribute="trailing" id="Ivd-Vs-S47"/>
+                            <constraint firstItem="fBW-lz-xjX" firstAttribute="top" secondItem="vvH-EF-Rc2" secondAttribute="bottom" id="Xc6-Dl-Mdy"/>
+                            <constraint firstItem="9N3-Dl-ITa" firstAttribute="top" secondItem="JiS-YU-Ggt" secondAttribute="bottom" id="bEo-VG-SYm"/>
+                            <constraint firstAttribute="trailing" secondItem="9N3-Dl-ITa" secondAttribute="trailing" id="dDp-Qo-jkp"/>
+                            <constraint firstItem="vvH-EF-Rc2" firstAttribute="top" secondItem="JiS-YU-Ggt" secondAttribute="bottom" constant="30" id="jOc-6x-Euh"/>
+                            <constraint firstItem="vvH-EF-Rc2" firstAttribute="leading" secondItem="Wqy-UY-lbq" secondAttribute="leading" id="uvF-ks-HRe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerHeaderView" destination="9N3-Dl-ITa" id="Py9-67-FKN"/>
+                        <outlet property="tableView" destination="vvH-EF-Rc2" id="4II-HK-GqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezu-tO-HAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383.5" y="589.5"/>
+        </scene>
+        <!--Event Dett Subview-->
+        <scene sceneID="COY-Th-eKT">
+            <objects>
+                <viewController storyboardIdentifier="EventDettSubview" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Omw-db-XgH" customClass="EventDettSubview" customModule="CsenCinofilia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vkc-Ye-dpt"/>
+                        <viewControllerLayoutGuide type="bottom" id="DqZ-nj-9gT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HcF-nS-TdV">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvs-Qa-L8S">
+                                <rect key="frame" x="5" y="110" width="50" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-cO-2rg">
+                                        <rect key="frame" x="0.0" y="30" width="50" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="58k-Uq-aQO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi6-te-RZw">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3on-6W-mqg"/>
+                                    <constraint firstItem="zcG-cO-2rg" firstAttribute="trailing" secondItem="Yi6-te-RZw" secondAttribute="trailing" id="FyX-ff-ecL"/>
+                                    <constraint firstAttribute="trailing" secondItem="zcG-cO-2rg" secondAttribute="trailing" id="Jvx-G0-iSK"/>
+                                    <constraint firstAttribute="bottom" secondItem="zcG-cO-2rg" secondAttribute="bottom" id="LSU-MR-uOd"/>
+                                    <constraint firstItem="Yi6-te-RZw" firstAttribute="top" secondItem="Nvs-Qa-L8S" secondAttribute="top" id="Prw-Au-lM1"/>
+                                    <constraint firstAttribute="width" constant="50" id="Wa6-Hv-g77"/>
+                                    <constraint firstItem="Yi6-te-RZw" firstAttribute="leading" secondItem="Nvs-Qa-L8S" secondAttribute="leading" id="ff5-hI-aDa"/>
+                                    <constraint firstItem="zcG-cO-2rg" firstAttribute="top" secondItem="Yi6-te-RZw" secondAttribute="bottom" id="jE5-iM-Fse"/>
+                                    <constraint firstItem="zcG-cO-2rg" firstAttribute="leading" secondItem="Yi6-te-RZw" secondAttribute="leading" id="uX3-Gv-iMY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#busiDes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1Q-Ik-SvK" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="236" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="45I-Wn-7x8"/>
+                                    <constraint firstAttribute="height" constant="20" id="vqA-SZ-r7H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="exr-FW-Xv6" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="171" width="50" height="18"/>
+                                <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QNf-1r-vUp"/>
+                                    <constraint firstAttribute="height" constant="18" id="XxS-ig-4Sf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giudice: ...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9u-6k-hsc" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="60" y="140" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="S7r-cX-RcK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uFc-R6-QvH" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="60" y="170" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6Sj-9Y-ewA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkZ-gR-j9J">
+                                <rect key="frame" x="0.0" y="225" width="400" height="1"/>
+                                <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eZA-ej-Zqa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#subsIni" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWv-qJ-4Si" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="266" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OXM-yE-umf"/>
+                                    <constraint firstAttribute="width" constant="80" id="QeZ-7u-2Ps"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#subsEnd" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNO-Re-t9i" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="296" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="PbH-L9-kkm"/>
+                                    <constraint firstAttribute="width" constant="80" id="XfV-Ow-lA3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGf-qd-u1M">
+                                <rect key="frame" x="0.0" y="351" width="400" height="1"/>
+                                <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="lmC-J9-dLo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#infoDes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGF-Mr-aNe" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="360" width="160" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="WmA-BI-D2o"/>
+                                    <constraint firstAttribute="width" constant="160" id="yWj-AQ-hvN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="......." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-Zu-KFK" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="387" width="390" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="ct9-gI-Ig9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLh-AZ-QUS">
+                                <rect key="frame" x="0.0" y="419" width="400" height="1"/>
+                                <color key="backgroundColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Pk4-as-7V2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNI-kn-mEb" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="88" y="236" width="307" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="O8i-Ti-JKn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data iniz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-yS-ddK" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="88" y="266" width="307" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="U0f-NB-I0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Fine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-5F-cTu" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="88" y="296" width="307" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="PI1-qB-rGu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indirizzo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z0V-ep-mpM" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="60" y="200" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="EqX-Gj-k7D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#handlers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-es-pb5" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="326" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CwA-4R-GtX"/>
+                                    <constraint firstAttribute="width" constant="80" id="RSE-eb-ss9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nn/nn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bys-Rx-4Vq" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="88" y="326" width="307" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="PnI-5Z-SdZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OTe-en-vpg">
+                                <rect key="frame" x="0.0" y="20" width="400" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6dE-vb-5JI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regolamento Wao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkG-Ml-Wkm" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="60" y="110" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wNo-tp-Jbs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3d-I6-aMo">
+                                <rect key="frame" x="5" y="450" width="390" height="485"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Omw-db-XgH" id="6cC-Vf-2WK"/>
+                                </connections>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#evenDes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiB-BE-siG" customClass="MYLabel" customModule="CsenCinofilia" customModuleProvider="target">
+                                <rect key="frame" x="5" y="428" width="300" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="dQ4-56-bzd"/>
+                                    <constraint firstAttribute="width" constant="300" id="dUC-LM-5wi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.028182249516248703" green="0.23366066813468933" blue="0.54574793577194214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="p9u-6k-hsc" firstAttribute="leading" secondItem="Nvs-Qa-L8S" secondAttribute="trailing" constant="5" id="39c-qe-0M5"/>
+                            <constraint firstItem="OTe-en-vpg" firstAttribute="top" secondItem="vkc-Ye-dpt" secondAttribute="bottom" id="4hQ-W1-187"/>
+                            <constraint firstAttribute="trailing" secondItem="p9u-6k-hsc" secondAttribute="trailing" constant="5" id="59m-GY-fWE"/>
+                            <constraint firstItem="cNO-Re-t9i" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="65C-nG-kjz"/>
+                            <constraint firstItem="hkZ-gR-j9J" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" id="7XF-kY-rq8"/>
+                            <constraint firstItem="mkG-Ml-Wkm" firstAttribute="leading" secondItem="Nvs-Qa-L8S" secondAttribute="trailing" constant="5" id="8JW-z9-uph"/>
+                            <constraint firstItem="DLh-AZ-QUS" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" id="9W7-8E-oqX"/>
+                            <constraint firstAttribute="trailing" secondItem="5pQ-Zu-KFK" secondAttribute="trailing" constant="5" id="BGj-yl-zJI"/>
+                            <constraint firstItem="NWv-qJ-4Si" firstAttribute="top" secondItem="E1Q-Ik-SvK" secondAttribute="bottom" constant="10" id="Bj0-4m-ScR"/>
+                            <constraint firstItem="rNI-kn-mEb" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="88" id="Bo3-rf-uVB"/>
+                            <constraint firstItem="NWv-qJ-4Si" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="CRu-vI-ogT"/>
+                            <constraint firstItem="Bys-Rx-4Vq" firstAttribute="top" secondItem="dxG-5F-cTu" secondAttribute="bottom" constant="10" id="CZv-yK-C7p"/>
+                            <constraint firstItem="cNO-Re-t9i" firstAttribute="top" secondItem="NWv-qJ-4Si" secondAttribute="bottom" constant="9" id="Cmn-Xf-JKV"/>
+                            <constraint firstItem="p9u-6k-hsc" firstAttribute="top" secondItem="mkG-Ml-Wkm" secondAttribute="bottom" constant="10" id="Fmf-j8-kXw"/>
+                            <constraint firstItem="zGF-Mr-aNe" firstAttribute="top" secondItem="hGf-qd-u1M" secondAttribute="bottom" constant="8" id="FnL-fO-qic"/>
+                            <constraint firstItem="exr-FW-Xv6" firstAttribute="top" secondItem="Nvs-Qa-L8S" secondAttribute="bottom" constant="11" id="Hcg-bX-ezR"/>
+                            <constraint firstAttribute="trailing" secondItem="hkZ-gR-j9J" secondAttribute="trailing" id="I1e-ZH-m9n"/>
+                            <constraint firstItem="CiB-BE-siG" firstAttribute="top" secondItem="DLh-AZ-QUS" secondAttribute="bottom" constant="8" id="ISs-Hi-4qA"/>
+                            <constraint firstItem="hkZ-gR-j9J" firstAttribute="top" secondItem="HcF-nS-TdV" secondAttribute="top" constant="225" id="LlU-ri-udS"/>
+                            <constraint firstItem="dxG-5F-cTu" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="88" id="NYm-Za-iVv"/>
+                            <constraint firstItem="zGF-Mr-aNe" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="P21-Yy-InK"/>
+                            <constraint firstAttribute="trailing" secondItem="hGf-qd-u1M" secondAttribute="trailing" id="QLT-lv-pei"/>
+                            <constraint firstItem="hGf-qd-u1M" firstAttribute="top" secondItem="gB2-es-pb5" secondAttribute="bottom" constant="5" id="Rih-yV-WzT"/>
+                            <constraint firstItem="Nvs-Qa-L8S" firstAttribute="top" secondItem="OTe-en-vpg" secondAttribute="bottom" constant="10" id="UHg-kA-oC2"/>
+                            <constraint firstItem="mkG-Ml-Wkm" firstAttribute="top" secondItem="OTe-en-vpg" secondAttribute="bottom" constant="10" id="VHV-Ba-ex4"/>
+                            <constraint firstItem="uFc-R6-QvH" firstAttribute="top" secondItem="p9u-6k-hsc" secondAttribute="bottom" constant="10" id="WwK-If-GFf"/>
+                            <constraint firstItem="rS3-yS-ddK" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="88" id="Xah-e4-fDJ"/>
+                            <constraint firstAttribute="trailing" secondItem="OTe-en-vpg" secondAttribute="trailing" id="Xy6-gs-73N"/>
+                            <constraint firstItem="gB2-es-pb5" firstAttribute="top" secondItem="cNO-Re-t9i" secondAttribute="bottom" constant="10" id="ZMW-ld-HTR"/>
+                            <constraint firstItem="Nvs-Qa-L8S" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="aaN-Hd-nN8"/>
+                            <constraint firstItem="uFc-R6-QvH" firstAttribute="leading" secondItem="exr-FW-Xv6" secondAttribute="trailing" constant="5" id="ahP-Xe-HqQ"/>
+                            <constraint firstItem="z0V-ep-mpM" firstAttribute="top" secondItem="uFc-R6-QvH" secondAttribute="bottom" constant="10" id="c37-gD-m9z"/>
+                            <constraint firstItem="5pQ-Zu-KFK" firstAttribute="top" secondItem="zGF-Mr-aNe" secondAttribute="bottom" constant="8" id="crY-4M-buY"/>
+                            <constraint firstItem="DLh-AZ-QUS" firstAttribute="top" secondItem="5pQ-Zu-KFK" secondAttribute="bottom" constant="13" id="dBM-gI-vTL"/>
+                            <constraint firstAttribute="trailing" secondItem="z0V-ep-mpM" secondAttribute="trailing" constant="5" id="dfw-44-zLc"/>
+                            <constraint firstItem="OTe-en-vpg" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" id="eCT-A0-62n"/>
+                            <constraint firstAttribute="trailing" secondItem="mkG-Ml-Wkm" secondAttribute="trailing" constant="5" id="eXr-an-m5L"/>
+                            <constraint firstItem="gB2-es-pb5" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="ebf-jx-1zS"/>
+                            <constraint firstItem="CiB-BE-siG" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="euZ-py-jIW"/>
+                            <constraint firstItem="Q3d-I6-aMo" firstAttribute="top" secondItem="CiB-BE-siG" secondAttribute="bottom" constant="3" id="fRj-mP-stY"/>
+                            <constraint firstAttribute="trailing" secondItem="rS3-yS-ddK" secondAttribute="trailing" constant="5" id="ghs-Ak-zOd"/>
+                            <constraint firstItem="E1Q-Ik-SvK" firstAttribute="top" secondItem="hkZ-gR-j9J" secondAttribute="bottom" constant="10" id="hdT-gz-rdY"/>
+                            <constraint firstItem="exr-FW-Xv6" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="iPl-Ok-bAC"/>
+                            <constraint firstItem="Q3d-I6-aMo" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="iV6-FZ-se7"/>
+                            <constraint firstItem="rNI-kn-mEb" firstAttribute="top" secondItem="hkZ-gR-j9J" secondAttribute="bottom" constant="10" id="k0f-2k-ec5"/>
+                            <constraint firstItem="E1Q-Ik-SvK" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="kAo-6Z-2yu"/>
+                            <constraint firstItem="DqZ-nj-9gT" firstAttribute="top" secondItem="Q3d-I6-aMo" secondAttribute="bottom" constant="65" id="kYg-J8-kqv"/>
+                            <constraint firstItem="hGf-qd-u1M" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" id="lwb-Sy-9pM"/>
+                            <constraint firstAttribute="trailing" secondItem="rNI-kn-mEb" secondAttribute="trailing" constant="5" id="mpQ-nS-CNK"/>
+                            <constraint firstAttribute="trailing" secondItem="DLh-AZ-QUS" secondAttribute="trailing" id="n8E-0A-8n8"/>
+                            <constraint firstItem="5pQ-Zu-KFK" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="5" id="nPk-tq-B3s"/>
+                            <constraint firstItem="Bys-Rx-4Vq" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="88" id="oKk-5d-l8a"/>
+                            <constraint firstAttribute="trailing" secondItem="uFc-R6-QvH" secondAttribute="trailing" constant="5" id="pUs-9m-1HP"/>
+                            <constraint firstItem="rS3-yS-ddK" firstAttribute="top" secondItem="rNI-kn-mEb" secondAttribute="bottom" constant="10" id="pvn-hU-5xO"/>
+                            <constraint firstAttribute="trailing" secondItem="Bys-Rx-4Vq" secondAttribute="trailing" constant="5" id="tcM-43-XA0"/>
+                            <constraint firstAttribute="trailing" secondItem="dxG-5F-cTu" secondAttribute="trailing" constant="5" id="xJZ-WZ-nnd"/>
+                            <constraint firstItem="dxG-5F-cTu" firstAttribute="top" secondItem="rS3-yS-ddK" secondAttribute="bottom" constant="10" id="yiA-5i-PrM"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3d-I6-aMo" secondAttribute="trailing" constant="5" id="yyt-VI-1xO"/>
+                            <constraint firstItem="z0V-ep-mpM" firstAttribute="leading" secondItem="HcF-nS-TdV" secondAttribute="leading" constant="60" id="zFh-fH-mCL"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="1000"/>
+                    <connections>
+                        <outlet property="imvLocandina" destination="OTe-en-vpg" id="XWd-x2-aIP"/>
+                        <outlet property="lblAddress" destination="z0V-ep-mpM" id="clj-gL-Nhi"/>
+                        <outlet property="lblArbitre" destination="p9u-6k-hsc" id="Ot3-RH-ADP"/>
+                        <outlet property="lblBus" destination="rNI-kn-mEb" id="vLP-u2-xHK"/>
+                        <outlet property="lblDatFin" destination="dxG-5F-cTu" id="B1N-Af-GO5"/>
+                        <outlet property="lblDatIni" destination="rS3-yS-ddK" id="A4e-Jb-xIS"/>
+                        <outlet property="lblDay" destination="Yi6-te-RZw" id="AZM-20-Sul"/>
+                        <outlet property="lblInfo" destination="5pQ-Zu-KFK" id="cV3-Uk-yIG"/>
+                        <outlet property="lblMonth" destination="zcG-cO-2rg" id="EyS-uP-nDb"/>
+                        <outlet property="lblNumReg" destination="Bys-Rx-4Vq" id="RzQ-WV-axO"/>
+                        <outlet property="lblPlace" destination="uFc-R6-QvH" id="hrT-ZK-VpP"/>
+                        <outlet property="lblRegolamento" destination="mkG-Ml-Wkm" id="ek8-gA-XDS"/>
+                        <outlet property="lblType" destination="exr-FW-Xv6" id="2oh-Ey-j43"/>
+                        <outlet property="viewDate" destination="Nvs-Qa-L8S" id="38a-tR-JaA"/>
+                        <outlet property="webView" destination="Q3d-I6-aMo" id="4Rz-r7-2nV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6y-0v-PNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="1564"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="user" width="128" height="128"/>
+    </resources>
+</document>
